@@ -1,0 +1,79 @@
+
+<html> 
+
+<head>
+	<title> About | Yalda Pashai </title>
+	<link rel="stylesheet" type="text/css" href="yalda_about.css" >
+
+	<script>
+		function ValidateEmail(inputText) {
+			var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if(inputText.value.match(mailformat)) {
+					alert("Awesome, your email has been sent! We'll stay in touch.")
+					document.form1.text1.focus();
+					
+					return true;
+				}
+		
+				else {
+					alert("Sorry, please enter a valid email.");
+					document.form1.text1.focus();
+					return false;
+				}
+		}
+	</script>
+</head>
+
+<body>
+<!-- MENU BAR -->
+	<ul class="menubar">
+  		<li id="yalda_home"><a class="active" href="yalda_home.html">YALDA PASHAI</a></li>
+  		<li class="navp2" id="contact_link"><a href="mailto:image@yaldapashai.com">CONTACT</a></li>
+  		<li class="navp2"><a href="yalda_home.html">PROJECTS</a></li>
+  		<li class="navp2"><a href="yalda_about.html" >ABOUT</a></li>
+	</ul>
+
+<!-- CONTENT -->
+	<div class="content">
+		<p id="cont1"> 
+			My name is Yalda Pashai. I am an Iranian multi-media artist currently specializing in photography. I am based in Toronto and am exploring how to apply VR to therapy. </p>
+
+		<img id="about" src="imgs/about-crop.jpg" alt="Photo of Yalda Pashai">
+
+		<p id="cont2"> 
+			Connect with me on <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fyalda-pashai-9b146b25%3Ffbclid%3DIwAR1BshISqJl8T38L5NShwE22w4pYX7j_GSrbDXL5n5omGR9Ft55_IHnFBnk&h=AT3JcjMnSNcRmRM3oo0BdKYfkTiv6NjP_H1Uw-ePlN6YgdIlVzpLqVkQa8Syxszm40tRfsCRdnORgjviLcxZ8lBufLWDq_gzTowOPY8i__Qb87IqcoxH9DbqSf-lLTQIVW8ZpL-A">LinkedIn</a>
+
+			, follow my journey on <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fyaldapashai%3Futm_source%3Dig_profile_share%26igshid%3D8eti8k84tz0c%26fbclid%3DIwAR1dpwgT9TKca5_b8jSnhAf2-Y9GAP3cg39zhhsQEfgH_1s-f1RPFSzxps8&h=AT3JcjMnSNcRmRM3oo0BdKYfkTiv6NjP_H1Uw-ePlN6YgdIlVzpLqVkQa8Syxszm40tRfsCRdnORgjviLcxZ8lBufLWDq_gzTowOPY8i__Qb87IqcoxH9DbqSf-lLTQIVW8ZpL-A">Instagram.</a><br>
+
+			or send me an email <a href="mailto:image@yaldapashai.com">here.</a> 
+
+			You can also follow my blog <a href="https://yaldapashai.wordpress.com">here.</a>
+		</p> 
+
+		<p id="cont3">
+			To get an extended view of my professional background, you can download my CV <a href="" download="">here.</a> 
+			I look forward to connecting with you. Please submit an email below to be updated on upcoming news and projects. </p>
+	<div>
+
+<!-- EMAIL INPUT BOX --> 
+	<div class="mail">
+		<h2 id="formHead">Sign up for information, news & updates</h2>
+		<form name="form1" action="#"> 
+			<ul>
+				<li class="secondList"><input id="input_box" type='text' name='text1' placeholder="Enter your email here" 
+
+				onfocus="this.placeholder = ''" 
+				onblur="this.placeholder = 'Your e-mail address'"
+				/></li>
+
+				<li class="secondList">&nbsp;</li>
+
+				<li class="submit"><input id="submit"type="submit" name="submit" value="Send" onclick="ValidateEmail(document.form1.text1)"/></li>
+
+				<li class="secondList">&nbsp;</li>
+			</ul>
+		</form>
+	</div>
+</body>
+
+</html>

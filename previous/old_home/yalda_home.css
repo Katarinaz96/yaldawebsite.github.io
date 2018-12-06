@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* MENU BAR */
+.menubar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    font-size:11px;
+    font-family: "Helvetica Medium Extended";
+  z-index:100;
+}
+
+#yalda_home {
+    float:left;
+    padding-left:1vw;
+}
+
+#contact_link {
+    padding-right:1vw;
+}
+
+.menubar li {
+    float:right;
+
+}
+
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color:#626268;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:white;
+  
+}
+
+/* MAIN COVER PHOTO */
+#main2 {
+    position:absolute;
+    top:0vh;
+    width:100vw;
+}
+
+.box1
+{
+    position:absolute;
+}
+
+/* RES LAYOUT - PROJECTS PHOTO GRID */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom:10px;
+    padding-top:10px;
+    position:absolute;
+    top:120vh;
+}
+
+/* FONTS */
+@font-face { 
+    font-family: "Helvetica Light Extended";
+
+    src:
+    url("fonts/HelveticaNeueLTStd-LtEx.ttf"),
+    url("fonts/HelveticaNeueLTStd-LtEx.woff"),
+    url("fonts/HelveticaNeueLTStd-LtEx.svg"),
+    url("fonts/HelveticaNeueLTStd-LtEx.eot");
+}
+
+@font-face {
+    font-family: "Helvetica Medium Extended";
+    
+    src:
+    url("fonts/HelveticaNeueLTStd-MdEx.ttf"),
+    url("fonts/HelveticaNeueLTStd-MdEx.woff"),
+    url("fonts/HelveticaNeueLTStd-MdEx.svg"),
+    url("fonts/HelveticaNeueLTStd-MdEx.eot");
+}
+
+/* MENU */
+@media screen and (max-width: 600px)
+{
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+/* (OTHER) RES LAYOUT - 4 COLUMNS */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.proj1 {
+    filter: gray; 
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;  
+    width:100%;
+}
+
+.proj1:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+    width:100%;
+}
+active 
+{
+    background-color: black;
+}
+
+#main
+{
+    padding:20px;
+    margin-top:30px;
+    background-color:white;
+    height:1500px;
+}
+
+@media screen and (max-width: 600px)
+{
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.proj1 {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .5s ease-in-out;  
+    }
+
+    .proj1:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

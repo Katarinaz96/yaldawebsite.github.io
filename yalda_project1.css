@@ -1,0 +1,135 @@
+body 
+{
+    margin:0;
+    font-family: sans-serif;
+   
+}
+
+.menubar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    font-size:12px;
+}
+
+.menubar li {
+    float:right;
+}
+#yalda_home {
+    float:left;
+}
+
+
+/* CONTENT */
+
+
+
+#cont1 {
+    color:black;
+    font-size:20px;
+    
+    text-align: center;
+
+    margin-top:10vh;
+    margin-bottom:10vh;
+
+    margin-right:50vw;
+    margin-left:50vw;
+
+    line-height: 5vh;
+
+}
+
+#cont2 {
+    color:black;
+    font-size:20px;
+    
+    text-align: center;
+
+    margin-top:10vh;
+    margin-bottom:10vh;
+
+    margin-right:50vw;
+    margin-left:50vw;
+
+    line-height: 5vh;
+
+}
+
+#cont3 {
+    color:black;
+    font-size:20px;
+    
+    text-align: center;
+
+    margin-top:10vh;
+    margin-bottom:10vh;
+
+    margin-right:50vw;
+    margin-left:50vw;
+
+    line-height: 5vh;
+
+}
+
+
+
+
+.concretebed
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+.contact_links {
+    margin:100px;
+}
+
+
+
+li 
+{
+    float: center;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+    background-color: #111;
+}
+
+.active 
+{
+    background-color: black;
+}
+
+#main
+{
+    padding:20px;
+    margin-top:30px;
+    background-color:white;
+    height:1500px;
+}
+
+@media screen and (max-width: 600px)
+{
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}

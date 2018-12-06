@@ -1,0 +1,115 @@
+<html> 
+
+<head>
+	<title> Project 1 | Yalda Pashai </title>
+	<link rel="stylesheet" type="text/css" href="yalda_project_about.css">
+
+</head>
+
+<body>
+	<ul class="menubar">
+  		<li id="yalda_home"><a class="active" href="yalda_home.html" >YALDA PASHAI</a></li>
+  		
+  		<li class="navp2"><a href="contact" >CONTACT</a></li>
+  		<li class="navp2"><a href="yalda_home.html"  >PROJECTS</a></li>
+  		
+  		<li class="navp2"><a href="yalda_about.html" >ABOUT</a></li>
+  		
+	</ul>
+
+	<div class="content">
+		<p id="cont1">"CONCRETE BED" <br>
+
+		Project 1 </p>
+	
+		<img class="concretebed" src="imgs/cb00.jpeg" alt="Yalda Recovery">
+
+	<br>
+	<br>
+		<img class="concretebed" src="imgs/cb01.jpeg" alt="Yalda Recovery">
+
+
+		<p id="cont2">
+		The Beginning </p>
+	
+
+		<img class="concretebed" src="imgs/cb02.jpeg" alt="Yalda Recovery">
+
+		<p id="cont3">
+		Here I am.</p>
+	
+		<img class="concretebed" src="imgs/cb03.jpeg" alt="Yalda Recovery">
+
+	<br>
+	<br>
+		<img class="concretebed" src="imgs/cb04.jpeg" alt="Yalda Recovery">
+	
+	<br>
+	<br>
+		<img class="concretebed" src="imgs/cb05.jpeg" alt="Yalda Recovery">
+
+	
+		<p id="cont1">
+		This on-going series stands for the anguish an individual and their loved ones face when fighting to regain strength. An unfamiliar anxiety, grief and pain are part of the daily routine when fragile minded; it is as though one belongs to a stranger&#39;s flesh. </p>
+	
+
+		<img class="concretebed" src="imgs/cb06.jpeg" alt="Yalda Recovery">
+
+	<br>
+	<br>
+		<img class="concretebed" src="imgs/cb07.jpeg" alt="Yalda Recovery">
+
+	<br>
+	<br>
+		<img class="concretebed" src="imgs/cb08.jpeg" alt="Yalda Recovery">
+
+	
+		<p id="cont1">
+		Although this photo-essay is a continuous project,<br> it, too, is a personal diary of a survival.</p>
+	
+		<img class="concretebed" src="imgs/cb09.jpeg" alt="Yalda Recovery">
+
+	</div>
+
+<script>
+	  var cont1=document.querySelector("#cont1");
+      var cont2=document.querySelector("#cont2");
+      var cont3=document.querySelector("#cont3");
+      cont1.addEventListener("mouseover", mouseOn);
+      cont2.addEventListener("mouseover", mouseOn);
+      cont3.addEventListener("mouseover", mouseOn);
+
+      cont1.addEventListener("mouseout", mouseOut);
+      cont2.addEventListener("mouseout", mouseOut);
+      cont3.addEventListener("mouseout", mouseOut);
+
+      function mouseOn()
+      {
+        if(this.id=="cont1")
+        {
+            this.textContent ="Reality is not something absolute, especially when it is shattered within seconds.";
+        }
+        else if (this.id=="cont2")
+        {
+            this.textContent="In September 2014, a calm Sunday afternoon turned into a living nightmare. Every painful breath, while covered in blood, roused me to this waking terror.";
+        }
+        else
+        {
+          this.textContent="TThis is a documentary series of self-portraits and surroundings associated to my physical rehabilitation recovery. I survived a terrible motorcycle accident that nearly left me paralyzed.";
+        }
+      }
+
+      function mouseOut()
+      {
+        cont1.textContent="CONCRETE BED";
+        cont2.textContent="The Beginning";
+        cont3.textContent="Here I am.";
+      }
+
+
+
+</script>
+
+</body>
+
+</html>

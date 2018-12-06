@@ -1,0 +1,194 @@
+body 
+{
+    margin:0;
+    
+}
+
+/* MENU BAR */
+.menubar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    font-size:11px;
+    font-family: "Helvetica Medium Extended";
+    
+}
+
+#yalda_home {
+    float:left;
+    padding-left:1vw;
+}
+
+
+
+.menubar li {
+    float:right;
+
+}
+
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color:#626268;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color:white;
+  
+}
+
+/* CONTENT */ 
+
+#cont1 {
+    font-family:"Helvetica Light Extended";
+    color:black;
+    font-size:25px;
+
+    margin-top:25vh;
+    margin-bottom:20vh;
+
+    margin-right:20vw;
+    margin-left:20vw;
+
+    line-height: 5vh;
+    text-align:center;
+
+}
+
+#cont2 {
+    font-family:"Helvetica Light Extended";
+    color:black;
+    font-size:20px;
+
+    margin-top:25vh;
+    margin-bottom:20vh;
+
+    margin-right:18vw;
+    margin-left:18vw;
+
+    line-height: 4vh;
+    text-align:center;
+
+}
+
+#cont3 {
+    font-family:"Helvetica Light Extended";
+    color:black;
+    font-size:16px;
+
+    margin-top:25vh;
+    margin-bottom:20vh;
+
+    margin-right:25vw;
+    margin-left:25vw;
+
+    line-height: 4vh;
+
+    text-align:center;
+}
+
+#about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+
+}
+
+/* EMAIL INPUT BOX */
+input 
+{
+    font-size: 24px;
+    text-align:left;
+}
+
+input:focus, textarea:focus{
+background-color: lightgrey;
+}
+input submit {
+font-size: 12pt;
+}
+
+#input_box{
+    width:100%;
+
+}
+#submit {
+
+    width:60px;
+}
+
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+.secondList {
+    list-style-type: none;
+    font-size: 16pt;
+}
+
+.submit{
+    list-style-type: none;
+    font-size: 16pt;
+}
+
+.mail {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 75vw;
+    height: 200px;
+    letter-spacing: .25px;
+}
+
+.mail h2 {
+    font-family: "Helvetica Medium Extended";
+    color:black;
+    margin:2.5vw;
+    text-align:center;
+}
+
+
+/* FONTS */
+
+@font-face { 
+    font-family: "Helvetica Light Extended";
+
+    src:
+    url("fonts/HelveticaNeueLTStd-LtEx.ttf"),
+    url("fonts/HelveticaNeueLTStd-LtEx.woff"),
+    url("fonts/HelveticaNeueLTStd-LtEx.svg"),
+    url("fonts/HelveticaNeueLTStd-LtEx.eot");
+
+}
+
+@font-face {
+    font-family: "Helvetica Medium Extended";
+    
+    src:
+    url("fonts/HelveticaNeueLTStd-MdEx.ttf"),
+    url("fonts/HelveticaNeueLTStd-MdEx.woff"),
+    url("fonts/HelveticaNeueLTStd-MdEx.svg"),
+    url("fonts/HelveticaNeueLTStd-MdEx.eot");
+}
+
+/* MENU */
+@media screen and (max-width: 600px)
+{
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
